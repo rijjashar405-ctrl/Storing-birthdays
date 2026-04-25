@@ -1,14 +1,24 @@
-# Create a dictionary with some birthdays
-birthdays = {
-    "Ali": "12/03/2010",
-    "Sara": "25/07/2011"
-}
+# Storing birthdays in 5 different variables
 
-# Ask user for a name
-name = input("Enter a name: ")
+birthday1 = "Ali - 12/03/2010"
+birthday2 = "Sara - 25/07/2011"
+birthday3 = "Ahmed - 10/01/2009"
+birthday4 = "Ayesha - 05/09/2012"
+birthday5 = "Hassan - 18/11/2010"
 
-# Check and print birthday
-if name in birthdays:
-    print(name + "'s birthday is " + birthdays[name])
+# Asking user for input
+name = input("Enter a name to search: ")
+
+# Checking manually
+if name == "Ali":
+    print(birthday1)
+elif name == "Sara":
+    print(birthday2)
+elif name == "Ahmed":
+    print(birthday3)
+elif name == "Ayesha":
+    print(birthday4)
+elif name == "Hassan":
+    print(birthday5)
 else:
-    print("Sorry, birthday not found.")
+    print("Birthday not found.")
